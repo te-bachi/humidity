@@ -6,7 +6,7 @@ OBJCOPY             = $(ARDUINO_TOOLS_ROOT)/bin/avr-objcopy
 AVRDUDE             = $(ARDUINO_TOOLS_ROOT)/bin/avrdude
 AVRDUDE_CONF        = $(ARDUINO_TOOLS_ROOT)/etc/avrdude.conf
 
-GLOBAL_CFLAGS       = -Wall -Os -DF_CPU=$(CPU_FREQ) -mmcu=$(DEVICE)
+GLOBAL_CFLAGS       = -Wall -Os -Iinclude -DF_CPU=$(CPU_FREQ) -mmcu=$(DEVICE)
 GLOBAL_LDFLAGS      = -mmcu=$(DEVICE)
 
 all: $(PROGRAMS)
