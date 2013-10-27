@@ -1,10 +1,10 @@
 
-ARDUINO_TOOLS_ROOT  = $(ARDUINO_ROOT)/hardware/tools/avr
+ARDUINO_TOOLS_ROOT  = $(ARDUINO_ROOT)/hardware/tools
 
-CC                  = $(ARDUINO_TOOLS_ROOT)/bin/avr-gcc
-OBJCOPY             = $(ARDUINO_TOOLS_ROOT)/bin/avr-objcopy
-AVRDUDE             = $(ARDUINO_TOOLS_ROOT)/bin/avrdude
-AVRDUDE_CONF        = $(ARDUINO_TOOLS_ROOT)/etc/avrdude.conf
+CC                  = $(ARDUINO_TOOLS_ROOT)/avr/bin/avr-gcc
+OBJCOPY             = $(ARDUINO_TOOLS_ROOT)/avr/bin/avr-objcopy
+AVRDUDE             = $(ARDUINO_TOOLS_ROOT)/avrdude
+AVRDUDE_CONF        = $(ARDUINO_TOOLS_ROOT)/avrdude.conf
 
 GLOBAL_CFLAGS       = -Wall -Os -Iinclude -DF_CPU=$(CPU_FREQ) -mmcu=$(DEVICE)
 GLOBAL_LDFLAGS      = -mmcu=$(DEVICE)
