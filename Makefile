@@ -9,7 +9,7 @@ PROGRAMS                    = humidity
 
 ### ARDUINO ###################################################################
 
-humidity_SOURCE             = main.c seg7.c humidity.c util.c spi.c mirf.c
+humidity_SOURCE             = main.c humidity.c util.c spi.c mirf.c usart.c
                               
 humidity_CFLAGS             = 
 humidity_LDFLAGS            = 
